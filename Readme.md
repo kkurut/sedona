@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [абдуллазим имаров](https://up.htmlacademy.ru/htmlcss/39/user/2446391).
-* Наставник: `Неизвестно`.
+- Студент: [абдуллазим имаров](https://up.htmlacademy.ru/htmlcss/39/user/2446391).
+- Наставник: [Карина Королева](https://htmlacademy.ru/profile/id1526731).
 
 ---
 
