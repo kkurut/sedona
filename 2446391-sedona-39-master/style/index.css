@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Texts-Texts-basic, #000);
+}
+
+.active-nav {
+  border-bottom: 2px solid #756257;
+  padding-bottom: 19px;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+header {
+  width: 1200px;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-logo {
+  margin-left: 70px;
+  margin-right: 28px;
+}
+
+.nav-list-item {
+  padding: 20px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.client-list {
+  column-gap: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.client-item {
+  padding: 22px 12px;
+}
+
+.client-button {
+  margin: auto 70px auto 0;
+}
+main {
+  background: #fff;
+  width: 1200px;
+}
+.section-1 {
+  display: grid;
+  width: 1200px;
+  height: 485px;
+  background-image: url(/img/sedona.preweiw.jpg);
+  background-size: 100% auto;
+}
+.section-1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.welcome-img {
+  margin: 51.4px 506.3px 0 506px;
+  padding: 0;
+}
+.to-gorgeous {
+  margin: 0 472px 54.12px 472px;
+  padding: 0;
+}
+.sedona-because {
+  margin: 0 371px 82px 371px;
+}
+
+.section-2 {
+}
+.about-sedona {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cnt h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.section-2 div {
+  height: 385px;
+}
+.cnt {
+  width: 400px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cnt-1 {
+  width: 1200px;
+  gap: 25px;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 118.182% */
+}
+.cnt-9 {
+  width: 1200px;
+  height: 385px;
+  gap: 20px;
+}
+.cnt-1 h2,
+.cnt-9 h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.cnt-2,
+.cnt-8 {
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+  gap: 30px;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+.cnt-2 h2,
+.cnt-8 h2 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 30px;
+}
+.cnt-4,
+.cnt-6 {
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+  gap: 30px;
+}
+.cnt-5,
+.cnt-10,
+.cnt-12 {
+  background-color: #83b3d333;
+  gap: 30px;
+}
+.cnt-4 h2,
+.cnt-5 h2,
+.cnt-6 h2 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 30px;
+}
+.cnt-10,
+.cnt-11,
+.cnt-12 {
+  padding: 80px 85px;
+  gap: 30px;
+}
+.cnt-1 p,
+.cnt-4 p,
+.cnt-5 p,
+.cnt-6 p,
+.cnt-9 p,
+.cnt-10 p,
+.cnt-11 p,
+.cnt-12 p {
+  color: var(--Texts-second, #333);
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 406px;
+}
+.bolder-text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-4 {
+  background-image: url(/img/Subscribe.jpg);
+  background-size: 100% auto;
+  height: 415px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 0;
+  text-align: center;
+}
+
+.section-4 p {
+}
+.subscribe-text {
+  color: var(--Texts-background-deafault, #fff);
+  font-size: 22px;
+  line-height: 26px; /* 118.182% */
+  margin-bottom: 54px;
+}
+.email-input {
+  padding: 12px 20px;
+  height: 50px;
+}
+
+footer {
+  height: 120px;
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+}
+footer div {
+  justify-content: space-between;
+  display: flex;
+  width: 1060px;
+  height: 50px;
+}
+footer div ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+footer div ul li {
+  margin: 0 10px;
+}
+.number-container {
+  width: 720px;
+  justify-content: space-around;
+}
+.number-container a {
+  color: var(--Texts-Texts-basic, #000);
+  text-align: center;
+
+  /* Texts/Text phone */
+  font-family: "PT Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+}
