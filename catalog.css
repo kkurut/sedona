@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   background-color: #f2f2f2;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .active-nav {
@@ -67,22 +68,42 @@ body {
 }
 
 .client-list {
+  width: 268px;
   margin: 0;
   padding: 0;
   margin-left: auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-right: 70px;
 }
-
+.search-button {
+  background: url(img/search.sedona.svg) no-repeat;
+  background-size: 20px 20px;
+  position: relative;
+  top: 20px;
+  right: 12px;
+  bottom: 20px;
+  left: 12px;
+}
+.favorites-button {
+  background: url(img/favorites.svg) no-repeat;
+  background-size: 20px 20px;
+  position: relative;
+  top: 20px;
+  right: 12px;
+  bottom: 20px;
+  left: 12px;
+}
 .favorites-button,
 .search-button {
   padding: 22px 12px;
 }
-.cl-2 {
-  margin-right: 20px;
+.cli-1,
+.cli-2 {
+  width: 44px;
+  height: 64px;
 }
-
 .client-item {
   width: 160px;
   height: 36px;
@@ -93,13 +114,13 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  margin-right: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 .client-item-flex {
+  margin-left: 20px;
   display: flex;
   align-items: center;
 }
@@ -114,8 +135,13 @@ body {
   margin-top: 0;
 }
 
+.section-filter {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
 .section-email {
-  background-color: #fff;
+  background-color: #ffffff;
   height: 415px;
   display: flex;
   flex-direction: column;
