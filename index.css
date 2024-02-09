@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   background-color: #f2f2f2;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .active-nav {
@@ -67,22 +68,42 @@ body {
 }
 
 .client-list {
+  width: 268px;
   margin: 0;
   padding: 0;
   margin-left: auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-right: 70px;
 }
-
+.search-button {
+  background: url(img/search.sedona.svg) no-repeat;
+  background-size: 20px 20px;
+  position: relative;
+  top: 20px;
+  right: 12px;
+  bottom: 20px;
+  left: 12px;
+}
+.favorites-button {
+  background: url(img/favorites.svg) no-repeat;
+  background-size: 20px 20px;
+  position: relative;
+  top: 20px;
+  right: 12px;
+  bottom: 20px;
+  left: 12px;
+}
 .favorites-button,
 .search-button {
   padding: 22px 12px;
 }
-.cl-2 {
-  margin-right: 20px;
+.cli-1,
+.cli-2 {
+  width: 44px;
+  height: 64px;
 }
-
 .client-item {
   width: 160px;
   height: 36px;
@@ -93,19 +114,29 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  margin-right: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 .client-item-flex {
+  margin-left: 20px;
   display: flex;
   align-items: center;
 }
 
+.bolder-text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 0;
+}
+
 .main-index {
-  background: #fff;
+  background: #ffffff;
   width: 1200px;
 }
 
@@ -147,8 +178,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.line-white {
-  background-color: #fff;
+.line-whiteee {
+  background-color: #0000004d;
   width: 60px;
   height: 2px;
 }
@@ -180,7 +211,7 @@ body {
   width: 400px;
   height: 385px;
   padding: 103px 85px;
-  color: #fff;
+  color: #ffffff;
   background-color: #82b3d3;
   gap: 30px;
 }
@@ -188,9 +219,8 @@ body {
 .cnt-6 {
   width: 400px;
   height: 385px;
-  padding: 103px 85px;
-  gap: 30px;
   background-color: #83b3d31f;
+  gap: 30px;
 }
 .cnt-5,
 .cnt-10,
@@ -201,17 +231,9 @@ body {
 .cnt-10,
 .cnt-11,
 .cnt-12 {
-  padding: 80px 85px;
   gap: 30px;
 }
-.cnt-1 span,
-.cnt-4 span,
-.cnt-5 span,
-.cnt-6 span,
-.cnt-9 span,
-.cnt-10 span,
-.cnt-11 span,
-.cnt-12 span {
+.color-text {
   color: var(--Texts-second, #333);
 }
 .about-service-list {
@@ -228,6 +250,10 @@ body {
   align-items: center;
   height: 406px;
   text-align: center;
+}
+.section-4 .color-text {
+  font-size: 22px;
+  line-height: 26px; /* 118.182% */
 }
 .search-main-button {
   text-decoration: none;
@@ -321,11 +347,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.social-nav-link {
+.social-nav-item {
   display: flex;
   margin: 13px;
 }
-.social-nav-item {
+.social-nav-link {
   display: flex;
   justify-content: space-between;
 }
