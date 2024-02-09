@@ -46,7 +46,7 @@
       </nav>
     </header>
     <main class="main-inner">
-      <section class="section-filter">
+      <section class="section-filter" data-test="filter">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ol class="breadcrums-list">
@@ -63,12 +63,11 @@
               <li class="catalog-filter-item">
                 <label class="control" for="pool"><input checked id="pool" type="checkbox" name="pool" />Бассейн</label>
               </li>
-              <li><label class="catalog-filter-item"><label class=" control" for="parking"><input checked id="parking"
-                      type="checkbox" name="parking" />Парковка</label>
+              <li><label class="catalog-filter-item"><input checked id="parking" type="checkbox"
+                    name="parking" />Парковка</label>
               </li>
               <li>
-                <label class="catalog-filter-item"> <label class=" control" for="wi-fi"><input id="wi-fi"
-                      type="checkbox" name="wi-Fi" />Wi-Fi</label>
+                <label class="catalog-filter-item"> <input id="wi-fi" type="checkbox" name="wi-Fi" />Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -86,6 +85,7 @@
                 <label class="control">
                   <input id="apartments" type="radio" name="housing" />Апартаменты</label>
               </li>
+            </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-tytle">Стоимость, ₽:</legend>
@@ -100,12 +100,11 @@
               </li>
               <li class="catalog-filter-item">
                 <label class=" control" for="range-min">
-                  <input type="range" class="range-min" min="0" max="9000" value="2500" step="100">
-
+                  <input type="range" id="range-min" class="range-min" min="0" max="9000" value="2500" step="100">
                 </label>
               </li>
               <li>
-                <label class=" control" for="range-min">
+                <label class=" control">
                   <input type="range" class="range-max" min="0" max="9000" value="7500" step="100">
                 </label>
               </li>
@@ -115,7 +114,7 @@
           <button type="reset" id="reset">СБРОСИТЬ</button>
         </form>
       </section>
-      <section class="section-catalog">
+      <section class="section-catalog" data-test="catalog">
         <p class="number-hotels">Найдено гостиниц: <span>38</span></p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
@@ -224,7 +223,7 @@
         </ul>
       </section>
     </main>
-    <section class="section-email">
+    <section class="section-email" data-test="subscribe">
       <h2 class="visually-hidden">Рассылка</h2>
       <p class="bolder-text">
         ПОДПИШИТЕСЬ НА РАССЫЛКУ
@@ -239,8 +238,7 @@
         <button class="subscribe-button all-button" type="submit" id="subscribe">Подписаться</button>
       </form>
     </section>
-    </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="social-nav-list">
         <li class="social-nav-item">
           <a class="social-nav-link" href="https://vk.com/htmlacademy"><img src="img/vk.svg" alt="vk" width="24"
