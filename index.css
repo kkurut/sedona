@@ -136,16 +136,17 @@ body {
 }
 
 .main-index {
+  height: 3352px;
   background: #ffffff;
   width: 1200px;
 }
 
-.section-1 {
+.section-hero {
   display: grid;
   width: 1200px;
   height: 485px;
-  background-image: url(img/sedona.preweiw.jpg);
-  background-size: 100% auto;
+  background-image: url(img/backround-img-hero.jpg);
+  background-size: 1200px 485px;
 }
 .welcome-sedona {
   margin: 51px 371px 82px 371px;
@@ -170,6 +171,7 @@ body {
   text-transform: uppercase;
 }
 .cnt {
+  gap: 30px;
   height: 385px;
   width: 400px;
   display: flex;
@@ -179,7 +181,7 @@ body {
   align-items: center;
 }
 .line-whiteee {
-  background-color: #0000004d;
+  background-color: #ffffff4d;
   width: 60px;
   height: 2px;
 }
@@ -188,7 +190,11 @@ body {
   width: 60px;
   height: 2px;
 }
+.cnt-with-img {
+  display: flex;
+}
 .cnt-1 {
+  height: 261px;
   width: 1200px;
   gap: 25px;
   font-size: 22px;
@@ -196,7 +202,7 @@ body {
 }
 .cnt-9 {
   width: 1200px;
-  height: 385px;
+  height: 246px;
   gap: 20px;
 }
 .cnt-1 p,
@@ -210,31 +216,40 @@ body {
 .cnt-8 {
   width: 400px;
   height: 385px;
-  padding: 103px 85px;
   color: #ffffff;
   background-color: #82b3d3;
-  gap: 30px;
 }
 .cnt-4,
 .cnt-6 {
   width: 400px;
   height: 385px;
   background-color: #83b3d31f;
-  gap: 30px;
 }
-.cnt-5,
-.cnt-10,
-.cnt-12 {
+.cnt-5 {
   background-color: #83b3d333;
-  gap: 30px;
-}
-.cnt-10,
-.cnt-11,
-.cnt-12 {
-  gap: 30px;
 }
 .color-text {
   color: var(--Texts-second, #333);
+}
+.cnt-10 {
+  background: url(img/home-icon.svg) no-repeat;
+  background-size: 75px 72px;
+  background-position: 162.5px 82px;
+  background-color: #83b3d31f;
+}
+.cnt-11 {
+  background: url(img/food-icon.svg) no-repeat;
+  background-size: 75px 72px;
+  background-position: 162.5px 82px;
+}
+.cnt-12 {
+  background: url(img/gift-icon.svg) no-repeat;
+  background-size: 75px 72px;
+  background-position: 162.5px 82px;
+  background-color: #83b3d31f;
+}
+.section-service {
+  height: 631px;
 }
 .about-service-list {
   margin: 0;
@@ -242,22 +257,26 @@ body {
   list-style: none;
   display: flex;
 }
-.section-4 {
+.about-service-list .about-service-item .service-name {
+  margin-top: 102px;
+}
+.section-search {
   margin: 0;
-  padding: 0;
+  padding: 96px 304px;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 406px;
   text-align: center;
 }
-.section-4 .color-text {
+.section-search-text {
+  margin: 0 0 54px 0;
   font-size: 22px;
   line-height: 26px; /* 118.182% */
 }
+
 .search-main-button {
   text-decoration: none;
-  margin-top: 54px;
   padding: 8px 50px;
   color: var(--Texts-background-deafault, #fff);
   font-size: 20px;
@@ -274,20 +293,29 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   display: flex;
-  margin-top: 0;
 }
 
-.section-5 {
-  background-color: #756157;
-  height: 415px;
+.section-subscribe-email {
+  background-image: url(img/Subscribe.jpg);
+  height: 414px;
+  width: 1200px;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 98px 271px 104px 271px;
+  padding: 96px 258px 104px 258px;
+}
+.subscribe-email-bold-text {
+  margin: 0 0 20px 0;
+  color: var(--Texts-background-deafault, #fff);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+  text-transform: uppercase;
 }
 
-.subscribe-text {
+.subscribe-email-text {
   display: flex;
   color: var(--Texts-background-deafault, #fff);
   font-size: 22px;
@@ -321,7 +349,6 @@ body {
   background: var(--Buttons-second, #82b3d3);
 }
 .footer {
-  width: 1200px;
   background-color: #fff;
   height: 120px;
   padding: 40px 70px 40px 70px;
