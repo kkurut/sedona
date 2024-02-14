@@ -9,6 +9,7 @@
 }
 
 body {
+  list-style: none;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -18,7 +19,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 23px;
   background-color: #f2f2f2;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
@@ -134,12 +135,213 @@ body {
   display: flex;
   margin-top: 0;
 }
-
-.section-filter {
+.hero {
+  height: 412px;
+  padding: 35px 70px 70px 70px;
   color: #ffffff;
-  background-color: #82b3d3;
+  background: url(img/filter-background.jpg) no-repeat;
+  display: grid;
+  gap: 30px;
+}
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px; /* 130% */
+  margin: 0;
+  padding: 0;
+}
+.inner-header {
+  width: 1060px;
+  height: 107px;
+  display: grid;
+  gap: 8px;
+}
+.breadcrums-list {
+  gap: 10px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section-filter {
+}
+.filter-form {
+  display: flex;
+}
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.catalog-filter-tytle {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  text-transform: capitalize;
 }
 
+.catalog-filter-list {
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.catalog-filter-item {
+  margin-bottom: 16px;
+}
+
+.infrastructure {
+  margin-right: 70px;
+}
+
+.housing-type {
+  margin-right: auto;
+}
+.regulate-prices {
+  margin-left: auto;
+}
+.form-buttons {
+  display: grid;
+  margin-left: 70px;
+  margin-top: auto;
+  gap: 32px;
+}
+.apply-button {
+  color: var(--Texts-background-deafault, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+  display: flex;
+  padding: 8px 50px;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--Buttons-second, #82b3d3);
+  width: 191px;
+  height: 36px;
+  border: none;
+}
+.reset-button {
+  color: var(--Texts-background-deafault, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+  display: flex;
+  padding: 8px 50px;
+  justify-content: center;
+  width: 191px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: inherit;
+  border: none;
+}
+.section-catalog {
+  padding: 50px 70px 60px 70px;
+}
+.catalog-inner-nav {
+  display: flex;
+}
+.find-number-hotels {
+  margin: 0 auto 0 0;
+  color: var(--Texts-Texts-basic, #000);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+  text-transform: uppercase;
+}
+.view-mode-buttons {
+  margin-left: 70px;
+  gap: 8px;
+  display: flex;
+}
+.view-button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 14px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid var(--Forms-elements-1, #e5e5e5);
+}
+.view-button-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.catalog-card {
+  width: 340px;
+  height: 438px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-areas:
+    "img img"
+    "img img"
+    "img img"
+    "name name"
+    "type price"
+    "more like"
+    "star rating";
+  row-gap: 16px;
+  column-gap: 20px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+}
+.catalog-card-img {
+  grid-area: img;
+}
+.catalog-card-name {
+  text-decoration: none;
+  grid-area: name;
+  margin: 0;
+  color: var(--Texts-Texts-basic, #000);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+}
+.catalog-card-type {
+  margin: 0;
+  margin-right: auto;
+  height: 21px;
+  grid-area: type;
+  color: var(--Texts-second, #333);
+  text-align: left;
+  line-height: 21px; /* 116.667% */
+}
+.catalog-card-price {
+  grid-area: price;
+  color: var(--Texts-second, #333);
+  text-align: right;
+  margin: 0;
+  line-height: 21px; /* 116.667% */
+}
+.more-details-button {
+  grid-area: more;
+}
+.favorite-hotel-button {
+  grid-area: like;
+}
+.rating-stars {
+  display: flex;
+  list-style: none;
+  height: 37px;
+  margin: 0;
+  grid-area: star;
+}
+.rating {
+  grid-area: rating;
+  height: 37px;
+  margin: 0;
+}
 .section-email {
   background-color: #ffffff;
   height: 415px;
@@ -163,7 +365,7 @@ body {
   width: 684px;
 }
 .email-input {
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   background: var(--basic-light, #f2f2f2);
   padding: 12px 20px;
   width: 452px;
