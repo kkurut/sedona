@@ -12,7 +12,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 0;
   width: 1200px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

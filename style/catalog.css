@@ -9,16 +9,14 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto 0 auto;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 21px;
   background-color: #f2f2f2;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
@@ -57,7 +55,7 @@ body {
 
 .nav-list-link {
   text-decoration: none;
-  color: var(--Texts-Texts-basic, #000);
+  color: var(--Texts-Texts-basic, #000000);
 }
 .nav-list-item {
   padding: 20px 16px;
@@ -76,6 +74,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: 70px;
+}
+.client-list-item:nth-child(-n + 2) {
+  width: 44px;
+  height: 64px;
 }
 .search-button {
   background: url("/images/search.sedona.svg") no-repeat;
@@ -97,14 +99,13 @@ body {
 }
 .favorites-button,
 .search-button {
+  margin: 0;
   padding: 22px 12px;
-  width: 44px;
-  height: 64px;
 }
 .client-item {
   width: 160px;
   height: 36px;
-  color: #fff;
+  color: #ffffff;
   background-color: #756157;
   border-radius: 4px;
   font-size: 16px;
