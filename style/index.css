@@ -142,7 +142,7 @@ body {
   display: grid;
   width: 1200px;
   height: 485px;
-  background-image: url("/images/backround-img-hero.jpg");
+  background-image: url("../images/backround-img-hero.jpg");
   background-size: 1200px 485px;
 }
 .welcome-sedona {
@@ -195,7 +195,7 @@ body {
 .block-one span,
 .block-nine span {
   font-size: 22px;
-  line-height: 26px; /* 118.182% */
+  line-height: 26px;
 }
 .block-nine {
   width: 1200px;
@@ -229,15 +229,15 @@ body {
   color: #333333;
 }
 .block-ten {
-  background: #83b3d31f url("/images/home-icon.svg") no-repeat 162px 82px;
+  background: #83b3d31f url("../images/home-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
 .block-eleven {
-  background: url("/images/food-icon.svg") no-repeat 162px 82px;
+  background: url("../images/food-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
 .block-twelve {
-  background: #83b3d31f url("/images/gift-icon.svg") no-repeat 162px 82px;
+  background: #83b3d31f url("../images/gift-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
 .section-service {
@@ -288,7 +288,7 @@ body {
 }
 
 .section-subscribe-email {
-  background-image: url("/images/Subscribe.jpg");
+  background-image: url("../images/Subscribe.jpg");
   height: 414px;
   width: 1200px;
   background-color: #000000;

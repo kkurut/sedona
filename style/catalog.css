@@ -80,7 +80,7 @@ body {
   height: 64px;
 }
 .search-button {
-  background: url("/images/search.sedona.svg") no-repeat;
+  background: url("../images/search.sedona.svg") no-repeat;
   background-size: 20px 20px;
   position: relative;
   top: 20px;
@@ -89,7 +89,7 @@ body {
   left: 12px;
 }
 .favorites-button {
-  background: url("/images/favorites.svg") no-repeat;
+  background: url("../images/favorites.svg") no-repeat;
   background-size: 20px 20px;
   position: relative;
   top: 20px;
@@ -136,7 +136,7 @@ body {
   height: 412px;
   padding: 35px 70px 70px 70px;
   color: #ffffff;
-  background: url("/images/filter-background.jpg") no-repeat;
+  background: url("../images/filter-background.jpg") no-repeat;
   display: grid;
   gap: 30px;
 }
