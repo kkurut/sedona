@@ -80,7 +80,7 @@ body {
   height: 64px;
 }
 .search-button {
-  background: url("/images/search.sedona.svg") no-repeat;
+  background: url("../images/search.sedona.svg") no-repeat;
   background-size: 20px 20px;
   position: relative;
   top: 20px;
@@ -89,7 +89,7 @@ body {
   left: 12px;
 }
 .favorites-button {
-  background: url("/images/favorites.svg") no-repeat;
+  background: url("../images/favorites.svg") no-repeat;
   background-size: 20px 20px;
   position: relative;
   top: 20px;
