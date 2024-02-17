@@ -5,7 +5,6 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/ptsans-400.woff2) format("woff2");
@@ -182,7 +181,7 @@ body {
 .about-sedona-item {
   height: 385px;
 }
-.block p {
+.dignity-name {
   display: flex;
   margin: 0;
   font-size: 24px;
@@ -190,7 +189,10 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
-.block {
+.dignity-text {
+  color: #333333;
+}
+.dignity {
   gap: 30px;
   height: 385px;
   width: 400px;
@@ -210,61 +212,58 @@ body {
   width: 60px;
   height: 2px;
 }
-.block-one {
+.dignity-one {
   height: 261px;
   width: 1200px;
   gap: 25px;
 }
-.block-one span,
-.block-nine span {
-  font-size: 22px;
-  line-height: 26px;
-}
-.block-nine {
-  width: 1200px;
-  height: 246px;
-  gap: 20px;
-}
-.block-one p,
-.block-nine p {
+.bigger-name {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
 }
-.block-two,
-.block-eight {
+.bigger-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0;
+}
+.dignity-nine {
+  width: 1200px;
+  height: 246px;
+  gap: 20px;
+}
+.dignity-two,
+.dignity-eight {
   width: 400px;
   height: 385px;
   color: #ffffff;
   background-color: #82b3d3;
 }
-.block-four,
-.block-six {
-  width: 400px;
-  height: 385px;
+.white-text {
+  color: #ffffff;
+}
+.dignity-four,
+.dignity-six {
   background-color: #83b3d31f;
 }
-.block-five {
+.dignity-five {
   background-color: #83b3d333;
 }
-.color-text {
-  color: #333333;
-}
-.block-ten {
+.dignity-ten {
   background: #83b3d31f url("../images/home-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
-.block-eleven {
+.dignity-eleven {
   background: url("../images/food-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
-.block-twelve {
+.dignity-twelve {
   background: #83b3d31f url("../images/gift-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
-}
-.section-service {
-  height: 631px;
 }
 .about-service-list {
   margin: 0;
@@ -273,7 +272,7 @@ body {
   display: flex;
 }
 
-.about-service-item .service-name {
+.about-service-item .dignity-name {
   margin-top: 102px;
 }
 .section-search {
@@ -285,30 +284,22 @@ body {
   height: 406px;
   text-align: center;
 }
-.section-search-text {
-  margin: 0 0 54px 0;
-  font-size: 22px;
-  line-height: 26px; /* 118.182% */
+.section-search .bigger-name {
+  margin-bottom: 20px;
 }
-
+.section-search .bigger-text {
+  margin-bottom: 54px;
+}
 .search-main-button {
   text-decoration: none;
   padding: 8px 50px;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
-  line-height: 36px; /* 180% */
+  line-height: 36px;
   text-transform: uppercase;
   border-radius: 4px;
   background: #756157;
-}
-.bolder-text {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  display: flex;
 }
 
 .section-subscribe-email {
