@@ -5,11 +5,6 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style/catalog.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet" />
   </head>
 
   <body>
@@ -62,15 +57,16 @@
             infrastructure">
               <legend class="catalog-filter-tytle">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control" for="pool"><input checked id="pool" type="checkbox"
-                      name="pool" />Бассейн</label>
+                <li class="catalog-filter-item checkbox-item"><label class="control-checkbox" for="pool"><input
+                      class="checkbox-input" checked id="pool" type="checkbox" name="pool" />Бассейн</label>
                 </li>
-                <li class="catalog-filter-item"><label class="control" for="parking"><input checked id="parking"
-                      type="checkbox" name="parking" />Парковка</label>
+                <li class="catalog-filter-item checkbox-item"><label class="control-checkbox" for="parking"><input
+                      class="checkbox-input" checked id="parking" type="checkbox" name="parking" />Парковка</label>
                 </li>
-                <li>
-                  <label class="catalog-filter-item"> <input id="wi-fi" type="checkbox" name="wi-Fi" />Wi-Fi</label>
+                <li class="catalog-filter-item checkbox-item">
+
+                  <label class="control-checkbox" for="wi-fi"> <input class="checkbox-input" id="wi-fi" type="checkbox"
+                      name="wi-Fi" />Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -131,8 +127,8 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
           <div class="view-mode-buttons">
-            <a class="view-button button-selected" href="#"><img class="view-button-img" src="images/cards-icon.svg"
-                alt="Показать карточки товаров" width="16" height="14">
+            <a class="view-button selected-view-button" href="#"><img class="view-button-img"
+                src="images/cards-icon.svg" alt="Показать карточки товаров" width="16" height="14">
             </a>
             <a class="view-button" href="#"><img class="view-button-img" src="images/single-icon.svg"
                 alt="показать по одному" width="16" height="14">
@@ -151,7 +147,8 @@
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 4000 ₽</p>
             <a class="more-details-button" href="#">подробнее</a>
-            <button class="favorite-hotel-button">В ИЗБРАННОЕ</button>
+            <button class="favorite-hotel-button">в избраноое</button>
+            <button class="favorite-hotel-select visually-hidden">в избраном</button>
             <span class="rating-stars">Отель 4 звезды</span>
             <p class="rating">РЕЙТИНГ: 8,5</p>
           </article>
@@ -162,7 +159,8 @@
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 5000 ₽</p>
             <a class="more-details-button" href="#">подробнее</a>
-            <button class="favorite-hotel-button">В ИЗБРАННОЕ</button>
+            <button class="favorite-hotel-button visually-hidden">в избраноое</button>
+            <button class="favorite-hotel-select">в избраном</button>
             <span class="rating-stars">Отель 4 звезды</span>
             <p class="rating">РЕЙТИНГ: 9,2</p>
           </article>
@@ -173,7 +171,8 @@
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 2500 ₽</p>
             <a class="more-details-button" href="#">подробнее</a>
-            <button class="favorite-hotel-button">В ИЗБРАННОЕ</button>
+            <button class="favorite-hotel-button">в избраноое</button>
+            <button class="favorite-hotel-select visually-hidden">в избраном</button>
             <span class="rating-stars">Отель 3 звезды</span>
             <p class="rating">РЕЙТИНГ: 6,9</p>
           </article>
@@ -183,19 +182,16 @@
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 1500 ₽</p>
             <a class="more-details-button" href="#">подробнее</a>
-            <button class="favorite-hotel-button">В ИЗБРАННОЕ</button>
+            <button class="favorite-hotel-button">в избраноое</button>
+            <button class="favorite-hotel-select visually-hidden">в избраном</button>
             <span class="rating-stars">Отель 2 звезды</span>
             <p class="rating">РЕЙТИНГ: 5,0</p>
           </article>
         </div>
+        <div class="long-line"></div>
         <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-selected">1</a>
+          <li class="pagination-item pagination-active ">
+            <a class="pagination-link active-link">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -206,7 +202,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item pagination-group">
             <span>...</span>
           </li>
           <li class="pagination-item">
