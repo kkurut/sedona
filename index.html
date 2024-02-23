@@ -29,11 +29,10 @@
           </li>
           <li class="client-list-item">
             <button class="favorites-button  all-button">
-
             </button>
           </li>
           <li class="client-list-item client-item-flex">
-            <a href="#" class="client-item">Хочу сюда!</a>
+            <a href="#" class="client-button">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -178,13 +177,13 @@
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a href="#" class="search-main-button all-button">
-          ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+          Поиск гостиницы в седоне
         </a>
       </section>
       <section class="section-subscribe-email" data-test="subscribe">
         <h2 class="visually-hidden">Рассылка</h2>
         <p class="subscribe-email-bold-text">
-          ПОДПИШИТЕСЬ НА РАССЫЛКУ
+          Подпишитесь на рассылку
         </p>
         <p class="subscribe-email-text">
           Только полезная информация и никакого спама,<br />
@@ -213,8 +212,41 @@
         </li>
       </ul>
       <a class="footer-nav-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/"><img src="images/Logo-html-academy.svg" alt="logo" /></a>
+      <a class="footer-nav-logo" href="https://htmlacademy.ru/"><img src="images/Logo-html-academy.svg"
+          alt="logo" /></a>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal-wrapper">
+        <h2 class="modal-name bigger-name">Поиск гостиницы в Седоне</h2>
+        <button class="close-modal-btn all-button"></button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="arrival-date-label" for="arrival date">
+            <span class="modal-text date-text">Дата заезда:</span>
+            <input class="arrival-date-input" type="date" id="arrival date" name="arrival date" value="2020-04-27">
+          </label>
+          <label class="date-departure-label" for="date of departure">
+            <span class="modal-text date-text">Дата выезда:</span>
+            <input class=" departure-date-input" type="date" id="date of departure" name="date of departure"
+              value="2023-01-09">
+          </label>
+          <div>
+            <label class="counter-adults-label" for="counter adults">
+              <span class="modal-text">Взрослые:</span>
+              <button class="minus-btn"></button>
+              <input class="counter-adults-input" type="number" id="counter-adults" name="counter adults">
+              <button class="plus-btn"></button>
+            </label>
+            <label class="counter-kids-label" for="counter kids">
+              <span class="modal-text">Дети:</span>
+              <button class="minus-btn"></button>
+              <input class="counter-kids-input" type="number" id="counter-kids" name="counter kids">
+              <button class="plus-btn"></button>
+            </label>
+          </div>
+          <a href="#">Найти</a>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
