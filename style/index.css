@@ -334,6 +334,214 @@ body {
 .search-main-button:focus {
   background: #615048;
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+}
+.modal-wrapper {
+  position: relative;
+  display: grid;
+  gap: 64px;
+  width: 717px;
+  height: 576px;
+  padding: 64px 70px;
+  margin: auto;
+  align-items: flex-start;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+.modal-name {
+  text-align: left;
+  margin: 0;
+  height: 36px;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 64px;
+  right: 50px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: url(../images/modal-close.svg) no-repeat #f2f2f2;
+  background-position: center;
+  cursor: pointer;
+}
+.modal-form {
+  display: grid;
+  gap: 48px;
+  grid-template-rows:
+    48px
+    48px
+    48px
+    60px;
+}
+.arrival-date-label::after {
+  content: "Мы не можем отправить вас в прошлое.";
+  color: #ff5757;
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  right: 140px;
+  top: 52px;
+}
+.arrival-date-label,
+.date-departure-label {
+  position: relative;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+.departure-date-input,
+.arrival-date-input {
+  font-size: 18px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 440px;
+  height: 48px;
+}
+.modal-text {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: auto auto auto 0;
+}
+.date-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date-text::after {
+  position: absolute;
+  background: url(../images/calendar-icon.svg);
+}
+.counter-adults-label {
+  position: relative;
+  margin-right: 88px;
+  width: 247px;
+}
+.counter-adults-label,
+.counter-kids-label {
+  height: 48px;
+  display: inline-flex;
+  text-align: center;
+}
+.adults-text {
+  width: 91px;
+  margin-right: 46px;
+}
+.kids-text {
+  margin-right: 10px;
+}
+.about-kids-info {
+  margin: auto 40px auto auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  background-image: url(../images/about-kids-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.about-kids-info::before {
+  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+  color: #ffffff;
+  font-family: "PT Sans";
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 256px;
+  height: 143px;
+  top: 35px;
+  right: -128px;
+  text-align: left;
+  position: absolute;
+  border-radius: 10px;
+  background: #333333;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  display: none;
+  margin-top: 10px;
+  background-image: url(../images/triangle.svg);
+  background-repeat: no-repeat;
+  background-position: 128px 0;
+}
+.about-kids-info:hover::before {
+  display: block;
+}
+.counter-adults-input,
+.counter-kids-input {
+  width: 31px;
+  height: 48px;
+  border: none;
+  background: #f2f2f2;
+  padding: 14px 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+}
+.counter-adults-input::-webkit-inner-spin-button,
+.counter-kids-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.minus-btn,
+.plus-btn {
+  width: 40px;
+  height: 48px;
+  background-color: #f2f2f2;
+  padding: 14px 10px;
+  border: none;
+  position: relative;
+}
+.minus-btn {
+  border-radius: 4px 0 0 4px;
+  background-image: url(../images/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.plus-btn {
+  border-radius: 0 4px 4px 0;
+  background-image: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal-search-link {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  width: 577px;
+  padding: 18px 77px;
+  justify-content: center;
+  border-radius: 10px;
+  background: #83b3d3;
+}
+.modal-container-close {
+  display: none;
+}
 /* Гостиницы  */
 .hero {
   height: 412px;
@@ -416,6 +624,8 @@ body {
 }
 .control-label {
   padding-left: 36px;
+  display: inline-block;
+  height: 23px;
 }
 .checkbox-input[type="checkbox"]:checked + .control-checkbox-mark {
   background-image: url(../images/input-on.svg);
@@ -1010,6 +1220,15 @@ body {
   gap: 260px;
   border: none;
 }
+.email-input::placeholder {
+  color: var(--basic-black, #000);
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+}
 .subscribe-button {
   color: #ffffff;
   font-size: 20px;
@@ -1027,7 +1246,6 @@ body {
   color: #ffffff4d;
 }
 .subscribe-button:disabled {
-  border-radius: 4px;
   background: #e5e5e5;
   color: #ffffff;
 }
@@ -1068,76 +1286,4 @@ body {
 .social-nav-link {
   display: flex;
   justify-content: space-between;
-}
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: rgba(242, 242, 242, 0.8);
-}
-.modal-wrapper {
-  position: relative;
-  display: grid;
-  gap: 64px;
-  width: 717px;
-  height: 576px;
-  padding: 64px 70px;
-  margin: auto;
-  align-items: flex-start;
-  border-radius: 30px;
-  background: #ffffff;
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-}
-.modal-name {
-  text-align: left;
-  margin: 0;
-  height: 36px;
-}
-.close-modal-btn {
-  position: absolute;
-  top: 45px;
-  right: 51px;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: url(../images/modal-close.svg) no-repeat #f2f2f2;
-  background-position: center;
-  cursor: pointer;
-}
-.modal-form {
-  display: grid;
-  gap: 48px;
-}
-.arrival-date-label,
-.date-departure-label {
-  vertical-align: middle;
-  display: flex;
-  justify-content: space-between;
-}
-.arrival-date-input {
-  padding: 12px 20px;
-  width: 440px;
-  height: 48px;
-}
-.departure-date-input {
-  padding: 12px 20px;
-  width: 440px;
-  height: 48px;
-}
-.modal-text {
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
-}
-.date-text {
-  display: flex;
-  align-items: center;
-}
-.modal-container-close {
-  display: none;
 }
