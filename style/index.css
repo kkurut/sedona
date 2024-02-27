@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 *,
 *::before,
 *::after {
@@ -51,7 +54,7 @@ body {
 .all-button {
   border: none;
   background-color: transparent;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 .page-header {
   width: 1200px;
@@ -134,7 +137,7 @@ body {
   background: #7db54f;
   color: #ffffff;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   padding: 5px 5px 5px 4px;
   font-size: 10px;
   font-style: normal;
@@ -184,7 +187,14 @@ body {
   display: grid;
   width: 1200px;
   height: 485px;
-  background-image: url("../images/backround-img-hero.jpg");
+  background-image: url("../images/sedona-hero-bacjground.jpg");
+}
+.section-hero::after {
+  top: 492px;
+  content: url(../images/hero-background-banner.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: bottom;
 }
 .welcome-sedona {
   margin: 51px 371px 82px 371px;
@@ -231,7 +241,7 @@ body {
   width: 60px;
   height: 2px;
 }
-.dignity-one {
+.dignity-sedona {
   height: 261px;
   width: 1200px;
   gap: 25px;
@@ -251,13 +261,13 @@ body {
   color: #333333;
   margin: 0;
 }
-.dignity-nine {
+.dignity-service {
   width: 1200px;
   height: 246px;
   gap: 20px;
 }
-.dignity-two,
-.dignity-eight {
+.dignity-town,
+.dignity-devils-bridge {
   width: 400px;
   height: 385px;
   color: #ffffff;
@@ -266,22 +276,22 @@ body {
 .white-text {
   color: #ffffff;
 }
-.dignity-four,
-.dignity-six {
+.dignity-small-area,
+.dignity-few-tourists {
   background-color: #83b3d31f;
 }
-.dignity-five {
+.dignity-beauty-road {
   background-color: #83b3d333;
 }
-.dignity-ten {
+.dignity-housing {
   background: #83b3d31f url("../images/home-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
-.dignity-eleven {
+.dignity-food {
   background: url("../images/food-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
-.dignity-twelve {
+.dignity-souvenirs {
   background: #83b3d31f url("../images/gift-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
 }
@@ -370,8 +380,7 @@ body {
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background: url(../images/modal-close.svg) no-repeat #f2f2f2;
-  background-position: center;
+  background: url(../images/modal-close.svg) center no-repeat #f2f2f2;
   cursor: pointer;
 }
 .modal-form {
@@ -386,11 +395,21 @@ body {
 .arrival-date-label::after {
   content: "Мы не можем отправить вас в прошлое.";
   color: #ff5757;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   position: absolute;
   right: 140px;
+  top: 52px;
+}
+.date-departure-label::after {
+  content: "На эти даты есть свободные номера. Пока есть.";
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  right: 89px;
   top: 52px;
 }
 .arrival-date-label,
@@ -403,7 +422,7 @@ body {
 .departure-date-input,
 .arrival-date-input {
   font-size: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 24px;
   border: none;
@@ -435,6 +454,9 @@ body {
   margin-right: 88px;
   width: 247px;
 }
+.counter-kids-label {
+  position: relative;
+}
 .counter-adults-label,
 .counter-kids-label {
   height: 48px;
@@ -453,40 +475,37 @@ body {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #83b3d3;
-  background-image: url(../images/about-kids-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../images/about-kids-icon.svg) center no-repeat #83b3d3;
   position: relative;
 }
-.about-kids-info::before {
-  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+.about-kids-text::before {
+  position: absolute;
+  top: -15px;
+  left: 122px;
+  content: url(../images/triangle.svg);
+  background-size: 19px 9px;
+  background-repeat: no-repeat;
+}
+.about-kids-text {
+  content: "";
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   padding: 15px 18px 18px 22px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   width: 256px;
   height: 143px;
-  top: 35px;
-  right: -128px;
+  top: 52px;
+  right: 40px;
   text-align: left;
   position: absolute;
   border-radius: 10px;
   background: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
-  display: none;
-  margin-top: 10px;
-  background-image: url(../images/triangle.svg);
-  background-repeat: no-repeat;
-  background-position: 128px 0;
 }
-.about-kids-info:hover::before {
-  display: block;
-}
-.counter-adults-input,
-.counter-kids-input {
+.counter-adults-input:disabled,
+.counter-kids-input:disabled {
+  color: #000000;
   width: 31px;
   height: 48px;
   border: none;
@@ -506,28 +525,24 @@ body {
 .plus-btn {
   width: 40px;
   height: 48px;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   padding: 14px 10px;
   border: none;
   position: relative;
 }
 .minus-btn {
   border-radius: 4px 0 0 4px;
-  background-image: url(../images/minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../images/minus.svg) center no-repeat #f2f2f2;
 }
 .plus-btn {
   border-radius: 0 4px 4px 0;
-  background-image: url(../images/plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../images/plus.svg) center no-repeat #f2f2f2;
 }
 .modal-search-link {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -629,22 +644,17 @@ body {
 }
 .checkbox-input[type="checkbox"]:checked + .control-checkbox-mark {
   background-image: url(../images/input-on.svg);
-  box-shadow: none;
-}
-.checkbox-input:active + .control-checkbox-mark {
-  box-shadow: none;
 }
 
 .control-checkbox:hover .control-checkbox-mark,
 .control-checkbox:hover .control-label {
-  box-shadow: none;
   opacity: 0.5;
 }
 .checkbox-input:focus-visible + .control-checkbox-mark {
-  box-shadow: 0 0 0 3px #82b3d3;
+  outline: 3px solid #83b3d3;
 }
 .checkbox-input:checked:focus-visible + .control-checkbox-mark {
-  box-shadow: 0 0 0 3px #82b3d3;
+  outline: 3px solid #83b3d3;
   background-image: url(../images/input-on.svg);
 }
 
@@ -661,7 +671,7 @@ body {
   background: #ffffff;
 }
 .radio-input:focus-visible + .control-radio-mark {
-  box-shadow: 0 0 0 3px #82b3d3;
+  outline: 3px solid #83b3d3;
 }
 .radio-input:checked + .control-radio-mark {
   background-image: url(../images/radio-on.svg);
@@ -692,7 +702,7 @@ body {
   border: none;
 }
 .filter-max-price-input {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -710,9 +720,8 @@ body {
 }
 .filter-min-price-input[type="number"]:focus-visible {
   border-radius: 4px 0 0 4px;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   background: #e6e6e6;
-  outline: none;
 }
 .filter-max-price-input:active {
   background: #e6e6e6;
@@ -720,9 +729,8 @@ body {
 }
 .filter-max-price-input[type="number"]:focus-visible {
   border-radius: 0 4px 4px 0;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   background: #e6e6e6;
-  outline: none;
 }
 .filter-min-price-input,
 .filter-max-price-input {
@@ -753,7 +761,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: #707070;
+  background: #707070;
 }
 .range-bar {
   position: absolute;
@@ -770,7 +778,7 @@ body {
   cursor: pointer;
 }
 .toggle-max {
-  right: 0px;
+  right: 0;
   top: -8px;
 }
 .toggle-min {
@@ -867,7 +875,7 @@ body {
 }
 .select-control {
   color: #333333;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   border-radius: 4px;
@@ -973,7 +981,7 @@ body {
   align-items: center;
   gap: 10px;
   padding: 8px 50px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   border-radius: 4px;
   background: #756157;
   text-decoration: none;
@@ -1002,7 +1010,7 @@ body {
   grid-area: like;
   color: #ffffff;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1029,7 +1037,7 @@ body {
   grid-area: like;
   color: #ffffff;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1222,7 +1230,7 @@ body {
 }
 .email-input::placeholder {
   color: var(--basic-black, #000);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

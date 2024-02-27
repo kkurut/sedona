@@ -45,7 +45,7 @@
       </section>
       <section class="section-advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества седоны</h2>
-        <div class="dignity-one dignity">
+        <div class="dignity-sedona dignity">
           <p class="dignity-name bigger-name">
             Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!
@@ -56,7 +56,7 @@
         </div>
         <ul class="list-about-sedona">
           <li class="about-sedona-item">
-            <div class="dignity-two dignity">
+            <div class="dignity-town dignity">
               <p class="dignity-name white-text">
                 Настоящий<br>
                 городок
@@ -70,12 +70,12 @@
             </div>
           </li>
           <li class="about-sedona-item">
-            <div class="dignity-three">
+            <div class="dignity-img">
               <img src="images/sedona-house.jpg" alt="sedona-house" width="800" height="385" />
             </div>
           </li>
           <li class="about-sedona-item">
-            <div class="dignity-four dignity">
+            <div class="dignity-small-area dignity">
               <p class="dignity-name">
                 Небольшая<br>
                 площадь
@@ -88,7 +88,7 @@
             </div>
           </li>
           <li class="about-sedona-item">
-            <div class="dignity-five dignity">
+            <div class="dignity-beauty-road dignity">
               <p class="dignity-name">
                 Красивая<br>
                 дорога
@@ -99,7 +99,7 @@
             </div>
           </li>
           <li class="about-sedona-item">
-            <div class="dignity-six dignity">
+            <div class="dignity-few-tourists dignity">
               <p class="dignity-name">
                 Мало<br>
                 туристов
@@ -109,10 +109,10 @@
             </div>
           </li>
           <li class="about-sedona-item">
-            <div class="dignity-seven"><img src="images/canyon.jpg" alt="canyon" width="800" height="385" /></div>
+            <div class="dignity-img"><img src="images/canyon.jpg" alt="canyon" width="800" height="385" /></div>
           </li>
           <li class="about-sedona-item">
-            <div class="dignity-eight dignity">
+            <div class="dignity-devils-bridge dignity">
               <p class="dignity-name">
                 Там есть<br>
                 мост дьявола
@@ -129,7 +129,7 @@
       </section>
       <section class="section-service" data-test="service">
         <h2 class="visually-hidden">Сервисы мотеля в Седоне</h2>
-        <div class="dignity-nine dignity">
+        <div class="dignity-service dignity">
           <p class="bigger-name">
             Приезжайте в Седону отдохнуть<br>
             в комфорте и уюте!
@@ -138,7 +138,7 @@
         </div>
         <ul class="about-service-list">
           <li class="about-service-item">
-            <div class="dignity-ten dignity">
+            <div class="dignity-housing dignity">
               <p class="dignity-name">Жильё</p>
               <span class="dignity-text">
                 Рекомендуем пожить<br>
@@ -148,7 +148,7 @@
             </div>
           </li>
           <li class="about-service-item">
-            <div class="dignity-eleven dignity">
+            <div class="dignity-food dignity">
               <p class="dignity-name">Еда</p>
               <span class="dignity-text">
                 Всегда заказывайте<br>
@@ -158,7 +158,7 @@
             </div>
           </li>
           <li class="about-service-item">
-            <div class="dignity-twelve dignity">
+            <div class="dignity-souvenirs dignity">
               <p class="dignity-name">Сувениры</p>
               <span class="dignity-text">
                 Не только китайского,<br>
@@ -212,41 +212,46 @@
         </li>
       </ul>
       <a class="footer-nav-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="footer-nav-logo" href="https://htmlacademy.ru/"><img src="images/Logo-html-academy.svg"
-          alt="logo" /></a>
+      <a class="footer-nav-logo" href="https://htmlacademy.ru/">
+        <svg></svg>
+      </a>
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal-wrapper">
         <button class="close-modal-btn all-button"></button>
         <h2 class="modal-name bigger-name">Поиск гостиницы в Седоне</h2>
-        <section>
-          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="arrival-date-label" for="arrival-date">
-              <span class="modal-text date-text">Дата заезда:</span>
-              <input class="arrival-date-input" type="date" id="arrival-date" name="arrival date" value="2020-04-27">
-            </label>
-            <label class="date-departure-label" for="date-of-departure">
-              <span class="modal-text date-text">Дата выезда:</span>
-              <input class=" departure-date-input" type="date" id="date-of-departure" name="date of departure"
-                value="2023-01-09">
-            </label>
-            <div>
-              <label class="counter-adults-label" for="counter-adults">
-                <span class="modal-text adults-text">Взрослые:</span>
-                <button type="submrit" name="minus" class="minus-btn"></button>
-                <input class="counter-adults-input" value="2" type="number" id="counter-adults" name="counter adults">
-                <button type="submit" name="plus" class="plus-btn"></button>
-              </label>
-              <label class="counter-kids-label" for="counter-kids">
-                <span class="modal-text kids-text">Дети:</span>
-                <span class="about-kids-info"></span>
-                <button type="submrit" name="minus" class="minus-btn"></button>
-                <input class="counter-kids-input" value="2" type="number" id="counter-kids" name="counter kids">
-                <button type="submit" name="plus" class="plus-btn"></button>
-              </label>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="arrival-date-label" for="arrival-date">
+            <span class="modal-text date-text">Дата заезда:</span>
+            <input class="arrival-date-input" type="date" id="arrival-date" name="arrival date" value="2020-04-27">
+          </label>
+          <label class="date-departure-label" for="date-of-departure">
+            <span class="modal-text date-text">Дата выезда:</span>
+            <input class=" departure-date-input" type="date" id="date-of-departure" name="date of departure"
+              value="2023-01-09">
+          </label>
+          <div>
+            <label for="counter-adults"></label>
+            <div class="counter-adults-label">
+              <span class="modal-text adults-text">Взрослые:</span>
+              <button type="submit" name="minus" class="minus-btn"></button>
+              <input class="counter-adults-input" value="2" type="number" id="counter-adults" name="counter adults"
+                disabled>
+              <button type="submit" name="plus" class="plus-btn"></button>
             </div>
-            <a class="modal-search-link" href="#">Найти</a>
-          </form>
+            <label for="counter-kids"></label>
+            <div class="counter-kids-label">
+              <span class="modal-text kids-text">Дети:</span>
+              <span class="about-kids-info"></span>
+              <span class="about-kids-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                лет. Дети до 6 лет размещаются бесплатно.</span>
+              <button type="submit" name="minus" class="minus-btn"></button>
+              <input class="counter-kids-input" value="2" type="number" id="counter-kids" name="counter kids" disabled>
+              <button type="submit" name="plus" class="plus-btn"></button>
+            </div>
+          </div>
+          <a class="modal-search-link" href="#">Найти</a>
+        </form>
       </div>
     </div>
   </body>
