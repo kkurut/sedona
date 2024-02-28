@@ -1,6 +1,3 @@
-html {
-  height: 100%;
-}
 *,
 *::before,
 *::after {
@@ -36,9 +33,9 @@ html {
 }
 
 body {
+  width: 1200px;
   margin: 0 auto 0 auto;
   padding: 0;
-  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -283,6 +280,11 @@ body {
 .dignity-beauty-road {
   background-color: #83b3d333;
 }
+.dignity-housing,
+.dignity-food,
+.dignity-souvenirs {
+  padding: 183px 85px 80px 85px;
+}
 .dignity-housing {
   background: #83b3d31f url("../images/home-icon.svg") no-repeat 162px 82px;
   background-size: 75px 72px;
@@ -302,9 +304,6 @@ body {
   display: flex;
 }
 
-.about-service-item .dignity-name {
-  margin-top: 102px;
-}
 .section-search {
   margin: 0;
   padding: 96px 304px;
@@ -1270,6 +1269,9 @@ body {
 }
 .footer-nav-logo {
   align-self: center;
+}
+.footer-nav-logo:hover:focus + .nav-logo {
+  fill: #756157;
 }
 .footer-nav-number {
   width: 720px;
