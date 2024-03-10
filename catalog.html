@@ -4,39 +4,38 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <ul class="nav-list">
-          <li class="nav-list-logo">
-            <a href="index.html">
-              <img class="logo-sedona" src="images/logo.svg" alt="logo-sedona" /></a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">О седоне</a></li>
-          <li class="nav-list-item"><a class="nav-list-link active-nav" href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <ul class="client-list">
-          <li class="client-list-item">
-            <button class="search-button all-button">
+      <div class="nav-list-logo">
+        <a href="index.html">
+          <img class="logo-sedona" src="images/logo.svg" alt="logo-sedona" />
+        </a>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-list-item"><a class="nav-list-link" href="#">О седоне</a></li>
+        <li class="nav-list-item"><a class="nav-list-link active-nav" href="catalog.html">Гостиницы</a></li>
+      </ul>
+      <ul class="client-list">
+        <li class="client-list-item">
+          <button class="search-button all-button">
 
-            </button>
-          </li>
-          <li class="client-list-item">
-            <button class="favorites-button all-button">
+          </button>
+        </li>
+        <li class="client-list-item">
+          <button class="favorites-button all-button">
 
-            </button>
-          </li>
-          <li class="client-list-item client-item-flex">
-            <a href="#" class="client-button">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
+          </button>
+        </li>
+        <li class="client-list-item client-item-flex">
+          <a href="#" class="client-button">Хочу сюда!</a>
+        </li>
+      </ul>
     </header>
     <main class="main-inner">
       <div class="hero">
@@ -147,13 +146,14 @@
         <div class="catalog-inner-nav">
           <p class="find-number-hotels">Найдено гостиниц: <span>38</span></p>
           <select class="select-control" aria-label="Сортировка">
-            <option class="cheap-first-option" value="cheap">Сначала дешевое</option>
+            <option class="cheap-first-option" value="cheap">Сначала дешевые</option>
             <option value="popular">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
           <div class="view-mode-buttons">
-            <a class="view-button selected-view-button" href="#"><img class="view-button-img"
-                src="images/cards-icon.svg" alt="Показать карточки товаров" width="16" height="14">
+            <a class="view-button selected-view-button" href="#">
+              <img class="view-button-img" src="images/cards-icon.svg" alt="Показать карточки товаров" width="16"
+                height="14">
             </a>
             <a class="view-button " href="#"><img class="view-button-img" src="images/single-icon.svg"
                 alt="показать по одному" width="16" height="14">
@@ -166,8 +166,10 @@
         <div class="main-cards">
           <h1 class="visually-hidden">Найденные отели</h1>
           <article class="catalog-card">
-            <img class="catalog-card-img" src="images/Amara-Resort-&-Spa.jpg" alt="Amara Resort & Spa" width="300"
-              height="212" />
+            <a class="catalog-card-img" href="#">
+              <img src="images/Amara-Resort-&-Spa.jpg" alt="Amara Resort & Spa" width="300" height="212" style="margin: 0;
+              padding: 0;" />
+            </a>
             <a class="catalog-card-name" href="#">Amara Resort & Spa</a>
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 4000 ₽</p>
@@ -190,8 +192,10 @@
             <p class="rating">РЕЙТИНГ: 8,5</p>
           </article>
           <article class="catalog-card">
-            <img class="catalog-card-img" src="images/Villas-at-Poco-Diablo.jpg" alt="Villas at Poco Diablo" width="300"
-              height="212" />
+            <a class="catalog-card-img" href="#">
+              <img class="catalog-card-img" src="images/Villas-at-Poco-Diablo.jpg" alt="Villas at Poco Diablo"
+                width="300" height="212" />
+            </a>
             <a class="catalog-card-name" href="#">Villas at Poco Diablo</a>
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 5000 ₽</p>
@@ -214,8 +218,10 @@
             <p class="rating">РЕЙТИНГ: 9,2</p>
           </article>
           <article class="catalog-card">
-            <img class="catalog-card-img" src="images/Desert-Quail-Inn.jpg" alt="Desert Quail Inn" width="300"
-              height="212" />
+            <a class="catalog-card-img" href="#">
+              <img class="catalog-card-img" src="images/Desert-Quail-Inn.jpg" alt="Desert Quail Inn" width="300"
+                height="212" />
+            </a>
             <a class="catalog-card-name" href="#">Desert Quail Inn</a>
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 2500 ₽</p>
@@ -238,7 +244,10 @@
             <p class="rating">РЕЙТИНГ: 6,9</p>
           </article>
           <article class="catalog-card">
-            <img class="catalog-card-img" src="images/GreenTree-Inn.jpg" alt="GreenTree Inn" width="300" height="212" />
+            <a class="catalog-card-img" href="#">
+              <img class="catalog-card-img" src="images/GreenTree-Inn.jpg" alt="GreenTree Inn" width="300"
+                height="212" />
+            </a>
             <a class="catalog-card-name" href="#">GreenTree Inn</a>
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 1500 ₽</p>
