@@ -8,36 +8,36 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="nav-list-logo">
-        <a href="index.html">
+    <header>
+      <nav class="page-nav">
+        <a class="nav-list-logo" href="index.html">
           <img class="logo-sedona" src="images/logo.svg" alt="logo-sedona" />
         </a>
-      </div>
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="index.html">Главная</a>
-        </li>
-        <li class="nav-list-item"><a class="nav-list-link" href="#">О седоне</a></li>
-        <li class="nav-list-item"><a class="nav-list-link active-nav" href="catalog.html">Гостиницы</a></li>
-      </ul>
-      <ul class="client-list">
-        <li class="client-list-item">
-          <button class="search-button all-button">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#">О седоне</a></li>
+          <li class="nav-list-item"><a class="nav-list-link active-nav" href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="client-list">
+          <li class="client-list-item">
+            <button class="search-button all-button">
 
-          </button>
-        </li>
-        <li class="client-list-item">
-          <button class="favorites-button all-button">
+            </button>
+          </li>
+          <li class="client-list-item">
+            <button class="favorites-button all-button">
 
-          </button>
-        </li>
-        <li class="client-list-item client-item-flex">
-          <a href="#" class="client-button">Хочу сюда!</a>
-        </li>
-      </ul>
+            </button>
+          </li>
+          <li class="client-list-item client-item-flex">
+            <a href="#" class="client-button">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <div class="hero">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -122,10 +122,10 @@
                 <li>
                   <div class="range-scale">
                     <div class="range-bar" style="right: 61px; width: 226px">
-                      <button class="range-toggle toggle-min">
+                      <button type="button" class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button type="button" class="range-toggle toggle-max">
                         <span class="visually-hidden">Изменить максимальную цену</span>
                       </button>
                     </div>
@@ -347,6 +347,90 @@
         </svg>
       </a>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal-wrapper">
+        <button class="close-modal-btn all-button"></button>
+        <h2 class="modal-name bigger-name">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="arrival-date-label" for="arrival-date">
+            <span class="modal-text date-text">Дата заезда:</span>
+            <span class="modal-input-icon"></span>
+            <input class="arrival-date-input" type="text" id="arrival-date" name="arrival date" value="27 апреля 2020"
+              placeholder="Укажите дату">
+            <span class="departure-input-undertext-false">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="date-departure-label" for="date-of-departure">
+            <span class="modal-text date-text">Дата выезда:</span>
+            <input class=" departure-date-input" type="text" id="date-of-departure" name="date of departure"
+              value="1 сентября 2023" placeholder="Укажите дату">
+            <span class="modal-input-icon"></span>
+            <span class="departure-input-undertext-true">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+          <div>
+            <label for="counter-adults"></label>
+            <div class="counter-adults-label">
+              <span class="modal-text adults-text">Взрослые:</span>
+              <button type="button" name="minus" class="minus-btn">
+                <svg class="minus-svg" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                </svg>
+              </button>
+              <input class="counter-adults-input" value="2" type="number" id="counter-adults" name="counter adults"
+                disabled>
+              <button type="button" name="plus" class="plus-btn">
+                <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                </svg>
+              </button>
+            </div>
+            <label for="counter-kids"></label>
+            <div class="counter-kids-label">
+              <span class="modal-text kids-text">Дети:</span>
+              <button type="button" class="about-kids-button" aria-label="tooltip-kids">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white" />
+                </svg>
+              </button>
+              <span class="about-kids-text" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с
+                вами, возраст
+                которых от 6 до 18
+                лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+              <button type="button" name="minus" class="minus-btn">
+                <svg class="minus-svg" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                </svg>
+              </button>
+              <input class="counter-kids-input" value="2" type="number" id="counter-kids" name="counter kids" disabled>
+              <button type="button" name="plus" class="plus-btn">
+                <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="modal-search-btn" href="#">Найти</button>
+        </form>
+
+      </div>
+    </div>
+    <script>
+      let clsModalBtn = document.querySelector('.close-modal-btn');
+      let searchBtn = document.querySelector('.search-main-button')
+      let modal = document.querySelector(".modal-container");
+      let clientBtn = document.querySelector('.client-button')
+      clsModalBtn.onclick = function () {
+        modal.classList.add("modal-container-close");
+      }
+      clientBtn.onclick = function () {
+        modal.classList.remove("modal-container-close")
+      }
+
+    </script>
   </body>
 
 </html>
