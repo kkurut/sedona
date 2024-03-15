@@ -1421,6 +1421,10 @@ body {
 .pagination-link:hover,
 .pagination-link:focus-visible {
   background: #68a2ca;
+  border-radius: 4px;
+  outline: 1px solid #82B3D3;
+  outline-offset:-1px ;
+  background:  #68A2CA;
 }
 .pagination-active {
   font-size: 20px;
@@ -1494,7 +1498,7 @@ body {
   align-items: center;
 }
 .social-nav-link {
-  margin: 10px 14px 13px 12px;
+  margin: 13px 14px 13px 12px;
   display: flex;
   justify-content: space-between;
 }
