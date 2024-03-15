@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header>
+    <header data-test="header">
       <nav class="page-nav">
         <a class="nav-list-logo" href="index.html">
           <img
@@ -644,7 +644,7 @@
         </svg>
       </a>
     </footer>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-close" data-test="modal">
       <div class="modal-wrapper">
         <div>
           <h2 class="modal-name bigger-name">Поиск гостиницы в Седоне</h2>
@@ -824,20 +824,6 @@
       clientBtn.onclick = function () {
         modal.classList.remove("modal-container-close");
       };
-      const favorites = document.querySelectorAll("favorite-hotel-button");
-      const selectfavs = document.querySelectorAll(".favorite-hotel-select");
-      for (let favorite of favorites) {
-        favorite.onclick = function () {
-          favorite.classList.add("visually-hidden");
-          selectfav.classList.remove("visually-hidden");
-        };
-      }
-      for (let selectfav of selectfavs) {
-        favorite.onclick = function () {
-          favorite.classList.remove("visually-hidden");
-          selectfav.classList.add("visually-hidden");
-        };
-      }
     </script>
   </body>
 </html>
