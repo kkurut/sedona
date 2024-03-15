@@ -321,6 +321,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 .about-service-list li {
   padding: 82px 86px;
@@ -396,6 +397,7 @@ body {
 .search-main-button:focus {
   background: #615048;
 }
+/*                      section-email                   */
 
 .section-subscribe-email {
   background-image: url(../images/subscribe.jpg);
@@ -1395,6 +1397,7 @@ body {
 .pagination {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   gap: 8px;
@@ -1488,6 +1491,7 @@ body {
   min-height: 120px;
   padding: 40px 70px 30px 70px;
   display: flex;
+  flex-wrap: wrap;
 }
 .social-nav-list {
   margin: 0;
