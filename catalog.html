@@ -10,7 +10,7 @@
   <body>
     <header data-test="header">
       <nav class="page-nav">
-        <a class="nav-list-logo" href="index.html">
+        <a class="nav-logo" href="index.html">
           <img
             class="logo-sedona"
             src="images/logo.svg"
@@ -27,7 +27,7 @@
             <a class="nav-list-link" href="#">О седоне</a>
           </li>
           <li class="nav-list-item active-nav">
-            <a class="nav-list-link" href="catalog.html">Гостиницы</a>
+            <a class="nav-list-link" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="client-list">
@@ -60,7 +60,7 @@
               <a class="breadcrums-link at-home" href="index.html"></a>
             </li>
             <li class="breadcrums-item active-breadcrums-link">
-              <a class="breadcrums-link" href="#">Гостиницы</a>
+              <a class="breadcrums-link" href="#" aria-current="true">Гостиницы</a>
             </li>
           </ol>
         </header>
@@ -186,7 +186,7 @@
                     <span class="max-price-text">до</span>
                   </label>
                 </li>
-                <li>
+                <div>
                   <div class="range-scale">
                     <div class="range-bar">
                       <button type="button" class="range-toggle toggle-min">
@@ -201,7 +201,7 @@
                       </button>
                     </div>
                   </div>
-                </li>
+                </div>
               </ul>
             </fieldset>
             <div class="form-buttons">
@@ -227,7 +227,7 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
           <div class="view-mode-buttons">
-            <a class="view-button view-cards selected-view-button" href="#">
+            <a class="view-button view-cards selected-view-button" aria-current="true">
               <span class="visually-hidden">Показать карточки товаров</span>
             </a>
             <a class="view-button view-by-one" href="#"
@@ -241,8 +241,9 @@
         <div class="main-cards">
           <h3 class="visually-hidden">Найденные отели</h3>
           <article class="catalog-card">
-            <a class="catalog-card-img" href="#">
+            <a class="catalog-card-img" href="#" tabindex="1">
               <img
+                class="catalog-card-image"
                 src="images/amara-resort-&-spa.jpg"
                 alt="Amara Resort & Spa"
                 width="300"
@@ -250,7 +251,7 @@
               />
             </a>
             <h4 class="catalog-card-name">
-              <a class="catalog-card-link" href="#">Amara Resort & Spa</a>
+              <a class="catalog-card-link" href="#" >Amara Resort & Spa</a>
             </h4>
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 4000 ₽</p>
@@ -277,6 +278,7 @@
               />
               <label class="star-label" for="Amara-Resort-&-Spa-1"></label>
               <input
+                tabindex="1"
                 class="rating-star visually-hidden"
                 type="radio"
                 id="Amara-Resort-&-Spa-2"
@@ -309,9 +311,9 @@
             <p class="rating">РЕЙТИНГ: 8,5</p>
           </article>
           <article class="catalog-card">
-            <a class="catalog-card-img" href="#">
+            <a class="catalog-card-img" href="#" tabindex="1">
               <img
-                class="catalog-card-img"
+                class="catalog-card-image"
                 src="images/villas-at-poco-diablo.jpg"
                 alt="Villas at Poco Diablo"
                 width="300"
@@ -345,7 +347,7 @@
                 name="rating-stars"
               />
               <label class="star-label" for="Villas-at-Poco-Diablo-1"></label>
-              <input
+              <input  tabindex="1"
                 class="rating-star visually-hidden"
                 type="radio"
                 id="Villas-at-Poco-Diablo-2"
@@ -378,9 +380,9 @@
             <p class="rating">РЕЙТИНГ: 9,2</p>
           </article>
           <article class="catalog-card">
-            <a class="catalog-card-img" href="#">
+            <a class="catalog-card-img" href="#" tabindex="1">
               <img
-                class="catalog-card-img"
+                class="catalog-card-image"
                 src="images/desert-quail-inn.jpg"
                 alt="Desert Quail Inn"
                 width="300"
@@ -421,7 +423,7 @@
                 name="rating-stars"
               />
               <label class="star-label" for="Desert-Quail-Inn-2"></label>
-              <input
+              <input  tabindex="1"
                 class="rating-star visually-hidden"
                 type="radio"
                 id="Desert-Quail-Inn-3"
@@ -447,9 +449,9 @@
             <p class="rating">РЕЙТИНГ: 6,9</p>
           </article>
           <article class="catalog-card">
-            <a class="catalog-card-img" href="#">
+            <a class="catalog-card-img" href="#" tabindex="1">
               <img
-                class="catalog-card-img"
+                class="catalog-card-image"
                 src="images/greentree-inn.jpg"
                 alt="GreenTree Inn"
                 width="300"
@@ -457,7 +459,7 @@
               />
             </a>
             <h4 class="catalog-card-name">
-              <a class="catalog-card-link" href="#">GreenTree Inn</a>
+              <a class="catalog-card-link" href="#" >GreenTree Inn</a>
             </h4>
             <p class="catalog-card-type">Гостиница</p>
             <p class="catalog-card-price">От 1500 ₽</p>
@@ -497,7 +499,7 @@
                 name="rating-stars"
               />
               <label class="star-label" for="GreenTree-Inn-3"></label>
-              <input
+              <input  tabindex="1"
                 class="rating-star visually-hidden"
                 type="radio"
                 id="GreenTree-Inn-4"
@@ -632,7 +634,6 @@
       >
       <a class="footer-nav-logo" href="https://htmlacademy.ru/">
         <svg
-          class="nav-logo"
           xmlns="http://www.w3.org/2000/svg"
           width="115"
           height="34"
@@ -691,11 +692,10 @@
               >На эти даты есть свободные номера. Пока есть.</span
             >
           </label>
-          <div>
-            <div class="counter-adults-label">
-              <label for="counter-adults"></label>
+          <div class="kids-and-adults">
+              <label class="counter-adults-label" for="counter-adults">
               <span class="modal-text adults-text">Взрослые:</span>
-              <button type="button" name="minus" class="minus-btn all-button">
+              <button type="button" name="minus" class="adults-minus-btn all-button">
                 <span class="visually-hidden">кнопка минуса</span>
                 <svg
                   class="minus-svg"
@@ -718,10 +718,9 @@
                 type="number"
                 id="counter-adults"
                 name="counter adults"
-                disabled
                 required
               />
-              <button type="button" name="plus" class="plus-btn all-button">
+              <button type="button" name="plus" class="adults-plus-btn all-button">
                 <span class="visually-hidden">кнопка плюса</span>
                 <svg
                   class="plus-svg"
@@ -737,9 +736,8 @@
                   />
                 </svg>
               </button>
-            </div>
-            <div class="counter-kids-label">
-              <label for="counter-kids"></label>
+          </label>
+              <label class="counter-kids-label" for="counter-kids">
               <span class="modal-text kids-text">Дети:</span>
               <button type="button" class="about-kids-button">
                 <span class="visually-hidden">тултип о детях</span>
@@ -763,7 +761,7 @@
                 >Укажите количество детей, которые будут с вами, возраст которых
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </span>
-              <button type="button" name="minus" class="minus-btn all-button">
+              <button type="button" name="minus" class="kids-minus-btn all-button">
                 <span class="visually-hidden">кнопка минуса</span>
                 <svg
                   class="minus-svg"
@@ -786,10 +784,10 @@
                 type="number"
                 id="counter-kids"
                 name="counter kids"
-                disabled
                 required
+                maxlength="99"
               />
-              <button type="button" name="plus" class="plus-btn all-button">
+              <button type="button" name="plus" class="kids-plus-btn all-button">
                 <span class="visually-hidden">кнопка плюса</span>
                 <svg
                   class="plus-svg"
@@ -806,8 +804,8 @@
                   />
                 </svg>
               </button>
+            </label>
             </div>
-          </div>
           <button type="submit" class="modal-search-btn all-button">
             Найти
           </button>
@@ -819,11 +817,37 @@
       const clsModalBtn = document.querySelector(".close-modal-btn");
       const clientBtn = document.querySelector(".client-button");
       clsModalBtn.onclick = function () {
-        modal.classList.add("modal-container-close");
+      modal.classList.add("modal-container-close");
       };
       clientBtn.onclick = function () {
-        modal.classList.remove("modal-container-close");
+      modal.classList.remove("modal-container-close");
       };
+      const minusKidsBtn = modal.querySelector(".kids-minus-btn");
+      const plusKidsBtn = modal.querySelector(".kids-plus-btn");
+      const kidsInput = modal.querySelector(".counter-kids-input");
+      const minusAdultsBtn = modal.querySelector(".adults-minus-btn");
+      const plusAdultsBtn = modal.querySelector(".adults-plus-btn");
+      const adultsInput = modal.querySelector(".counter-adults-input");
+      minusKidsBtn.onclick =function () {
+        if (kidsInput.value > 0) {
+          kidsInput.value--;
+      }
+     }
+     plusKidsBtn.onclick = function () {
+      if (kidsInput.value < 99) {
+        kidsInput.value++;
+      }
+     }
+      minusAdultsBtn.onclick =function () {
+        if (adultsInput.value > 0) {
+          adultsInput.value--;
+      }
+     }
+     plusAdultsBtn.onclick = function () {
+      if (adultsInput.value < 99) {
+        adultsInput.value++;
+      }
+     }
     </script>
   </body>
 </html>
