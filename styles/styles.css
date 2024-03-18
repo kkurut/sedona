@@ -1511,7 +1511,7 @@ body {
 
 .catalog-card-type {
   margin: 0 auto 0 0;
-  height: 21px;
+  min-height: 21px;
   grid-area: type;
   color: #333333;
   text-align: left;
@@ -1568,6 +1568,7 @@ body {
   color: #ffffff;
   text-align: center;
   align-self: center;
+  padding: 8px 6px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -1605,6 +1606,7 @@ body {
   align-self: center;
   grid-area: like;
   text-align: center;
+  padding: 8px 6px;
   min-height: 36px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -1707,7 +1709,7 @@ body {
   align-items: center;
   min-width: 60px;
   min-height: 60px;
-  padding: 11px 0 13px 0;
+  padding: 11px 15px 13px 15px;
   border-radius: 4px;
   background: #82b3d3;
   text-decoration: none;
