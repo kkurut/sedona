@@ -489,6 +489,7 @@ body {
 .section-subscribe-email {
   background-color: #68a2ca;
   background-image: url("../images/subscribe.jpg");
+  background-size:cover;
   min-height: 415px;
   background-repeat: no-repeat;
   display: flex;
