@@ -1333,7 +1333,7 @@ body {
 }
 
 .reset-button:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .reset-button:focus-visible {
@@ -1343,16 +1343,19 @@ body {
 
 /*                          catalog-cards           */
 .section-catalog {
+
   background: #ffffff;
   padding: 50px 70px 60px 70px;
 }
 
 .catalog-inner-nav {
+  align-items: flex-start;
   display: flex;
   margin-bottom: 40px;
 }
 
 .find-number-hotels {
+  max-width: 338px;
   margin: auto auto auto 0;
   color: #000000;
   font-size: 30px;
@@ -1368,7 +1371,7 @@ body {
   line-height: 21px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  width: 292px;
+  max-width: 292px;
   min-height: 49px;
   padding: 12px 50px 12px 20px;
   margin: 0 70px 0 0;
@@ -1391,9 +1394,9 @@ body {
 }
 
 .view-mode-buttons {
+	max-width: 168px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
   align-items: self-start;
   gap: 8px;
 }
