@@ -1371,7 +1371,7 @@ body {
   line-height: 21px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  max-width: 292px;
+  width: 292px;
   min-height: 49px;
   padding: 12px 50px 12px 20px;
   margin: 0 70px 0 0;
